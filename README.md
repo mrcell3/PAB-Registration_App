@@ -121,17 +121,17 @@ lib/
 
 | Widget | Digunakan Di | Fungsi |
 |--------|-------------|--------|
-| `TextFormField` | Nama, Email, Password, Tanggal Lahir | Input teks terintegrasi dengan `Form`, mendukung validasi dan controller |
-| `RadioListTile` | Jenis Kelamin | Pilihan tunggal dari beberapa opsi; semua radio berbagi `groupValue` yang sama |
-| `DropdownButtonFormField` | Program Studi | Dropdown terintegrasi `Form` untuk memilih satu opsi dari daftar tetap |
-| `CheckboxListTile` | Syarat & Ketentuan | Kombinasi `Checkbox` + `ListTile`; menampilkan centang beserta judul dan subjudul |
-| `showDatePicker` | Tanggal Lahir | Fungsi bawaan Flutter yang membuka dialog kalender; mengembalikan `Future<DateTime?>` |
-| `Form` | Registration Page | Container untuk mengelompokkan field dan mengontrol validasi secara serentak |
-| `Consumer<T>` | AppBar Badge, List Page | Me-rebuild hanya bagian yang dibungkus saat state Provider berubah |
-| `Badge` | AppBar (ikon peserta) | Menampilkan notifikasi angka kecil di atas widget lain |
-| `AlertDialog` | Sukses registrasi, Konfirmasi hapus | Dialog modal di atas halaman untuk notifikasi dan konfirmasi |
-| `ListView.builder` | Registrant List Page | Render daftar secara *lazy* — hanya item yang terlihat di layar yang dibuat |
-| `CircleAvatar` | List Page, Detail Page | Avatar lingkaran berisi inisial nama pendaftar |
+| `TextFormField` | Nama, Email, Password, Tanggal Lahir | Kotak isian teks untuk pengguna mengetik data |
+| `RadioListTile` | Jenis Kelamin | Tombol pilihan bulat — hanya satu yang bisa dipilih dalam satu waktu |
+| `DropdownButtonFormField` | Program Studi | Menu pilihan yang muncul ke bawah saat ditekan |
+| `CheckboxListTile` | Syarat & Ketentuan | Kotak centang dengan label di sampingnya |
+| `showDatePicker` | Tanggal Lahir | Membuka dialog kalender agar pengguna bisa memilih tanggal |
+| `Form` | Registration Page | Pembungkus semua field agar validasinya bisa dicek sekaligus |
+| `Consumer<T>` | AppBar Badge, List Page | Memantau perubahan data dan otomatis memperbarui tampilan yang terkait |
+| `Badge` | AppBar (ikon peserta) | Angka kecil di atas ikon yang menunjukkan jumlah peserta terdaftar |
+| `AlertDialog` | Sukses registrasi, Konfirmasi hapus | Kotak pop-up di tengah layar untuk menampilkan pesan atau meminta konfirmasi |
+| `ListView.builder` | Registrant List Page | Menampilkan daftar item secara berurutan ke bawah, efisien untuk data banyak |
+| `CircleAvatar` | List Page, Detail Page | Avatar lingkaran berisi inisial nama peserta |
 | `SnackBar` | Validasi tambahan | Notifikasi singkat di bawah layar untuk pesan error non-field |
 
 ---
@@ -142,10 +142,10 @@ lib/
 |--------|-------------|--------|
 | `ChangeNotifier` + `notifyListeners()` | Provider | Memberitahu widget untuk rebuild saat data berubah |
 | `Consumer<T>` | List Page, AppBar | Widget yang rebuild otomatis saat Provider update |
-| `context.read<T>()` | Submit form, Detail page | Membaca Provider tanpa subscribe rebuild |
+| `context.read<T>()` | Submit form, Detail page | Mengambil data dari Provider satu kali tanpa terus-menerus memantau perubahannya |
 | `GlobalKey<FormState>` | Registration Page | Mengontrol validasi seluruh form sekaligus |
 | `TextEditingController` | Semua field teks | Membaca dan mengatur nilai input field |
-| `ListView.builder` | List Page | Render item secara lazy, efisien untuk list panjang |
-| `Navigator.pushNamed` | Semua halaman | Navigasi antar halaman menggunakan named route |
+| `ListView.builder` | List Page | Menampilkan daftar panjang secara hemat — item hanya dibuat saat benar-benar terlihat di layar |
+| `Navigator.pushNamed` | Semua halaman | Berpindah ke halaman lain menggunakan nama route yang sudah didaftarkan di `main.dart` |
 
 ---
