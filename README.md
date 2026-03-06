@@ -13,6 +13,7 @@ Aplikasi Flutter untuk manajemen pendaftaran event dengan fitur form registrasi,
 
 ### 1. Halaman Form Pendaftaran
 
+<img width="747" height="880" alt="Screenshot 2026-03-06 130209" src="https://github.com/user-attachments/assets/6d5478a4-ed96-48a1-b484-d63450ca8862" />
 
 Halaman utama yang pertama kali muncul saat aplikasi dibuka. Berisi form lengkap yang harus diisi oleh calon peserta sebelum bisa mendaftar. Di bagian AppBar terdapat ikon dengan **badge angka** yang menunjukkan jumlah peserta yang sudah terdaftar secara real-time.
 
