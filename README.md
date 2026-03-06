@@ -13,6 +13,7 @@ Aplikasi Flutter untuk manajemen pendaftaran event dengan fitur form registrasi,
 
 ### 1. Halaman Form Pendaftaran
 
+
 Halaman utama yang pertama kali muncul saat aplikasi dibuka. Berisi form lengkap yang harus diisi oleh calon peserta sebelum bisa mendaftar. Di bagian AppBar terdapat ikon dengan **badge angka** yang menunjukkan jumlah peserta yang sudah terdaftar secara real-time.
 
 Elemen yang tampil di halaman ini:
@@ -29,6 +30,8 @@ Elemen yang tampil di halaman ini:
 
 ### 2. Validasi Form
 
+<img width="744" height="948" alt="Screenshot 2026-03-06 125628" src="https://github.com/user-attachments/assets/f79ff07b-0eef-4dd2-9937-94dfe7aaa0e9" />
+
 Pesan error muncul otomatis di bawah setiap field segera setelah pengguna berinteraksi dengan field tersebut — tanpa harus menekan tombol submit terlebih dahulu. Ini mencegah pengguna melewati field yang belum diisi atau diisi dengan format yang salah.
 
 Contoh pesan error yang muncul:
@@ -42,6 +45,8 @@ Contoh pesan error yang muncul:
 
 ### 3. Date Picker
 
+<img width="748" height="947" alt="Screenshot 2026-03-06 131008" src="https://github.com/user-attachments/assets/e6581f8b-05c8-4348-bca5-ad0226c656ec" />
+
 Saat field **Tanggal Lahir** ditekan, muncul dialog kalender interaktif bawaan Flutter. Pengguna dapat menavigasi bulan dan tahun untuk memilih tanggal lahir. Kalender dibatasi antara tahun **1990** hingga **hari ini**, sehingga tidak bisa memilih tanggal yang tidak logis.
 
 Kalender langsung terbuka di tanggal **1 Januari 2004** sebagai titik awal yang relevan untuk mahasiswa. Setelah dipilih, tanggal akan otomatis terisi ke dalam field dengan format yang sudah diformat, contoh: *1 Januari 2004*.
@@ -49,6 +54,8 @@ Kalender langsung terbuka di tanggal **1 Januari 2004** sebagai titik awal yang 
 ---
 
 ### 4. Dialog Registrasi Berhasil
+
+<img width="746" height="889" alt="Screenshot 2026-03-06 131118" src="https://github.com/user-attachments/assets/d0fe3095-d7c9-428c-9c36-4c497d2ebe1a" />
 
 Setelah semua field terisi dengan benar dan tombol **DAFTAR SEKARANG** ditekan, muncul dialog konfirmasi yang menampilkan nama peserta yang baru saja terdaftar. Dialog ini muncul di atas halaman form (form tidak tertutup).
 
@@ -59,6 +66,8 @@ Terdapat dua pilihan aksi:
 ---
 
 ### 5. Halaman Daftar Peserta
+
+<img width="746" height="948" alt="Screenshot 2026-03-06 125831" src="https://github.com/user-attachments/assets/c2efe814-6100-40ac-8e16-2a7fed6f54cc" />
 
 Menampilkan seluruh peserta yang sudah berhasil mendaftar dalam bentuk list kartu. Jumlah peserta ditampilkan secara dinamis pada judul halaman, misalnya *"Daftar Peserta (1)"*.
 
@@ -72,6 +81,8 @@ Setiap item di list menampilkan:
 
 ### 6. Dialog Konfirmasi Hapus
 
+<img width="747" height="946" alt="Screenshot 2026-03-06 132053" src="https://github.com/user-attachments/assets/8df3eecc-cdd0-41cd-b116-5a462b16c419" />
+
 Ketika ikon hapus (🗑️) ditekan, muncul dialog konfirmasi sebelum data benar-benar dihapus. Ini mencegah pengguna kehilangan data secara tidak sengaja karena salah tekan.
 
 Dialog menampilkan nama peserta yang akan dihapus dan dua tombol:
@@ -81,6 +92,8 @@ Dialog menampilkan nama peserta yang akan dihapus dan dua tombol:
 ---
 
 ### 7. Halaman Detail Peserta
+
+<img width="747" height="947" alt="Screenshot 2026-03-06 131154" src="https://github.com/user-attachments/assets/65b98969-f370-4dcf-95bb-85174de1b63b" />
 
 Muncul saat pengguna mengetuk salah satu item di daftar peserta. Menampilkan semua informasi peserta secara lengkap dalam bentuk kartu-kartu info yang rapi.
 
@@ -95,6 +108,8 @@ Informasi yang ditampilkan:
 ---
 
 ### 8. Empty State — Belum Ada Peserta
+
+<img width="745" height="946" alt="Screenshot 2026-03-06 125537" src="https://github.com/user-attachments/assets/a3157c85-b7b4-40b1-85b4-93a3f7e739e0" />
 
 Jika belum ada peserta yang terdaftar (atau semua sudah dihapus), halaman daftar menampilkan tampilan kosong yang informatif agar pengguna tidak bingung. Terdapat ikon besar, teks *"Belum ada pendaftar"*, dan ajakan untuk segera mendaftar.
 
